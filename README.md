@@ -10,10 +10,11 @@ Under mild assumptions, we provide the regret analysis of MuFasa. It can achieve
 Furthermore, we conduct extensive experiments to show that MuFasa outperforms strong baselines on real-world data sets.
 
 
+
 ## Upper Confidence Bound
 UCB is the key component of MuFasa, determining the empirical performance. $UCB(\mathbf{X}_t)$ can be formulated as
-\[
-UCB(\mathbf{X}_t)  = (1-\lambda) g(\mathbf{x}; \theta_0) + \lambda g(\mathbf{x}; \theta_t)
-\]
+![equation](http://www.sciweavers.org/tex2img.php?eq=UCB%28%5Cmathbf%7BX%7D_t%29%20%20%3D%20%281-%5Clambda%29%20g%28%5Cmathbf%7Bx%7D%3B%20%5Ctheta_0%29%20%2B%20%5Clambda%20g%28%5Cmathbf%7Bx%7D%3B%20%5Ctheta_t%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
-![img](https://bit.ly/2TlhNqL)
+where ![equation](http://www.sciweavers.org/tex2img.php?eq=g%28%5Cmathbf%7Bx%7D%3B%20%5Ctheta_0%29%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) 
+is the gradient at initialization and 
+![equation]
