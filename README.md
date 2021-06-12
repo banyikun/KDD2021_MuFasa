@@ -11,7 +11,7 @@ Furthermore, we conduct extensive experiments to show that MuFasa outperforms st
 
 
 
-## Upper Confidence Bound
+## Setting of UCB
 
 ![alt text](./MuFasa_Readme.jpg) 
 
