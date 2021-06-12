@@ -15,3 +15,14 @@ Furthermore, we conduct extensive experiments to show that MuFasa outperforms st
 
 ![alt text](./MuFasa_Readme.jpg) 
 
+
+## Reference 
+
+If this paper is inspirational to you, please kindly cite this paper.
+
+@article{ban2021multi,   
+  title={Multi-facet Contextual Bandits: A Neural Network Perspective},  
+  author={Ban, Yikun and He, Jingrui and Cook, Curtiss B},  
+  journal={arXiv preprint arXiv:2106.03039},  
+  year={2021}  
+}  
