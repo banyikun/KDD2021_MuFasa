@@ -1,4 +1,4 @@
-from sklearn.datasets import fetch_openml
+from sklearn.datasets import fetch_openml   
 from sklearn.utils import shuffle
 from sklearn.preprocessing import OrdinalEncoder
 from sklearn.preprocessing import normalize
