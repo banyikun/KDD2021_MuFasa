@@ -18,7 +18,7 @@ Furthermore, we conduct extensive experiments to show that MuFasa outperforms st
 
 ## Reference 
 
-If this paper is inspirational to you, please kindly cite this paper.
+### If this paper is inspirational to you, please kindly cite this paper.
 
 @article{ban2021multi,   
   title={Multi-facet Contextual Bandits: A Neural Network Perspective},  
