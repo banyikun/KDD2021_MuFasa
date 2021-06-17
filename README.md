@@ -13,7 +13,7 @@ Furthermore, we conduct extensive experiments to show that MuFasa outperforms st
 
 ## Setting of UCB
 
-![alt text](./MuFasa_Readme1.jpg) 
+![alt text](./MuFasa_Readme-3.jpg) 
 
 
 ## Reference 
