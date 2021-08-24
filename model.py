@@ -16,11 +16,14 @@ class Network(nn.Module):
     def __init__(self, dim, hidden_size=50):
         super(Network, self).__init__()
         self.fc1_t1 = nn.Linear(dim[0], hidden_size)
-        self.fc1_t2 = nn.Linear(dim[1], hidden_size)
         self.fc2_t1 = nn.Linear(hidden_size, hidden_size)
+
+        self.fc1_t2 = nn.Linear(dim[1], hidden_size)
         self.fc2_t2 = nn.Linear(hidden_size, hidden_size)
+        
         self.fc3_com = nn.Linear(hidden_size*2, hidden_size*2)
         self.fc4_com = nn.Linear(hidden_size*2, 1)
+        
         self.activate = nn.ReLU()
     def forward(self, x1, x2):
         a = self.fc2_t1(self.activate(self.fc1_t1(x1)))
