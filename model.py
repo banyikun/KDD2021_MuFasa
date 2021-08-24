@@ -53,27 +53,22 @@ class MuFasa:
             return np.sqrt(1 / (1 + m))
         
         mu = self.func(tensor1, tensor2)
-        mu_ini = self.func_ini(tensor1, tensor2)
-        #print("mu:", len(mu), len(mu[0]))
         g_list = []
         sampled = []
         ave_sigma = 0
         ave_rew = 0
-        for fx, fx_ini in zip(mu, mu_ini):
+        for fx in mu:
             self.func.zero_grad()
-            self.func_ini.zero_grad()
             fx.backward(retain_graph=True)
-            #fx_ini.backward(retain_graph=True)
             g = torch.cat([p.grad.flatten().detach() for p in self.func.parameters()])
-            g_list.append(g)
             sigma2 = self.lamdba * g * g / self.U
             sigma = torch.sqrt(torch.sum(sigma2))
             sample_r = fx.item() + self.nu *  sigma.item()
             sampled.append(sample_r)
             ave_sigma += sigma.item()
             ave_rew += sample_r
+            g_list.append(g)
         arm = np.argmax(sampled)
-        #print("arm:", arm)
         self.U += g_list[arm] * g_list[arm]
         return arm, g_list[arm].norm().item(), ave_sigma, ave_rew
 
