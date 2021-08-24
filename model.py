@@ -68,7 +68,7 @@ class MuFasa:
             g_list.append(g)
             sigma2 = self.lamdba * g * g / self.U
             sigma = torch.sqrt(torch.sum(sigma2))
-            sample_r = fx.item() + 0.5 *  sigma.item()
+            sample_r = fx.item() + self.nu *  sigma.item()
             sampled.append(sample_r)
             ave_sigma += sigma.item()
             ave_rew += sample_r
