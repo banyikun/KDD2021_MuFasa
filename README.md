@@ -16,6 +16,28 @@ Furthermore, we conduct extensive experiments to show that MuFasa outperforms st
 ![alt text](./MuFasa_Readme-3.jpg) 
 
 
+## Prerequeistes
+CUDA 11.2
+
+torch 1.9.0
+
+torchvision 0.10.0
+
+sklearn 0.24.1
+
+numpy 1.20.1
+
+scipy 1.6.2
+
+pandas 1.2.4
+
+
+## Hyperparameters
+
+lambda (regularization and adjust UCB): recommend grid search (0.01, 0.001, 0.0001)
+
+nu (adjust UCB): recommend grid search (1, 0.5, 0.1)
+
 ## Reference 
 
 ### If this paper is inspirational to you, please kindly cite this paper.
