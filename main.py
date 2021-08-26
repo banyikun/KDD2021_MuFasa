@@ -9,6 +9,7 @@ from model import MuFasa
 import itertools
 
 def get_new_context(contexts):
+    ''' count all possible combination of K arms '''
     new_contexts = []
     dim = 0
     index_cont = []
@@ -24,10 +25,12 @@ def get_new_context(contexts):
 
 
 def get_final_reward_2(subrewards):
-    return subrewards[0]+subrewards[1]
+    ''' final reward function  '''
+    return 2 * subrewards[0]+ subrewards[1]
 
 
 def get_final_reward(subrewards):
+    ''' final reward function  '''
     return sum(subrewards)
 
 
