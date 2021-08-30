@@ -42,9 +42,17 @@ nu (adjust UCB): recommend grid search (1, 0.5, 0.1)
 
 ### If this paper is inspirational to you, please kindly cite this paper.
 
-@article{ban2021multi,   
-  title={Multi-facet Contextual Bandits: A Neural Network Perspective},  
-  author={Ban, Yikun and He, Jingrui and Cook, Curtiss B},  
-  journal={arXiv preprint arXiv:2106.03039},  
-  year={2021}  
-}  
+@inproceedings{10.1145/3447548.3467299, \
+author = {Ban, Yikun and He, Jingrui and Cook, Curtiss B.}, \
+title = {Multi-Facet Contextual Bandits: A Neural Network Perspective}, \
+year = {2021}, \ 
+isbn = {9781450383325}, \
+publisher = {Association for Computing Machinery}, \
+address = {New York, NY, USA}, \
+doi = {10.1145/3447548.3467299}, \ 
+booktitle = {Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining}, \
+pages = {35–45}, \
+numpages = {11}, \
+location = {Virtual Event, Singapore}, series = {KDD '21} 
+}
+ 
