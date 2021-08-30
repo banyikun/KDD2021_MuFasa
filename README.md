@@ -53,6 +53,7 @@ doi = {10.1145/3447548.3467299}, \
 booktitle = {Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining}, \
 pages = {35–45}, \
 numpages = {11}, \
-location = {Virtual Event, Singapore}, series = {KDD '21} 
+location = {Virtual Event, Singapore},\
+series = {KDD '21} 
 }
  
