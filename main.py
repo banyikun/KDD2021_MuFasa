@@ -81,8 +81,9 @@ if __name__ == '__main__':
             summ[task]+=reg
             task+=1
         final_r = get_final_reward(subrewards)
+        l.update(org_context[arm_select], final_r, subrewards, t)
         if t%2 == 0:
-            loss = l.train(org_context[arm_select], final_r, subrewards, t)
+            loss = l.train()
 
         regrets.append([summ[i] for i in range(arg_num_tasks)])
         if t % 100 == 0:
