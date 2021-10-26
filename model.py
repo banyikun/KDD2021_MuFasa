@@ -88,8 +88,6 @@ class MuFasa:
         self.reward.append(r2)
 
     def train(self):
-       
-       
         new_cont = self.context_list
         new_rwd =  self.reward
                 
