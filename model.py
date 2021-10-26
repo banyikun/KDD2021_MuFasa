@@ -74,9 +74,9 @@ class MuFasa:
         arm = np.argmax(sampled)
         self.U += g_list[arm] * g_list[arm]
         return arm, g_list[arm].norm().item(), ave_sigma, ave_rew
-
-    def train(self, context,  final_r, subrewards, t):
-       
+    
+    
+    def update(self, context,  final_r, subrewards, t):
         self.context_list.append(context)
         self.reward.append(final_r)
         r1, r2 = subrewards[0], subrewards[1]
@@ -86,6 +86,10 @@ class MuFasa:
         new_cont2 = [np.zeros(self.dim[0]), context[1]]
         self.context_list.append(new_cont2)
         self.reward.append(r2)
+
+    def train(self):
+       
+       
         new_cont = self.context_list
         new_rwd =  self.reward
                 
